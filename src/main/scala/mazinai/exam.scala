@@ -3,7 +3,7 @@ package mazinai
 /**
   * Created by macky on 2016/12/01.
   */
-class exam() {
+object Exam {
 
   def fizzBuzz(n: Int): List[String] = {
     (1 to n).toList.map { v: Int =>
@@ -11,7 +11,5 @@ class exam() {
     }
   }
 
-  def primeCheck(n: Int): String = {
-    if ((2 until n).filter(n % _ == 0).isEmpty && n > 1) "これは素数" else "これは素数ではない"
-  }
+  def primeCheck(n: Int): String = "これは素数" + (if ((2 until n).exists(n % _ == 0) && n > 1) "ではない" else "")
 }

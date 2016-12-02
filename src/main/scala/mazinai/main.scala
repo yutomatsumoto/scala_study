@@ -1,14 +1,13 @@
 package mazinai
 
-object main {
+object Main {
 
   def main(args: Array[String]): Unit = {
-    val exam = new exam
 
     //fizzbuzz
-    exam.fizzBuzz(15).foreach(println(_))
+    Exam.fizzBuzz(15).foreach(println(_))
 
     //primecheck
-    println(exam.primeCheck(6689))
+    println(Exam.primeCheck(6689))
   }
 }
