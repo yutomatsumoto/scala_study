@@ -13,5 +13,8 @@ object Main {
     //calendar
 //    Exam.cal(2014, 5)
 
+//    val gameValues = Map("fallout4"->7800, "undertale"->980)
+//    print(Exam.mapTest(gameValues))
+
   }
 }

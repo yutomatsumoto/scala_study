@@ -41,4 +41,26 @@ object Exam {
     }
   }
 
+  def mapTest(mp: Map[String, Int]) = {
+    //return option or default
+    mp.getOrElse("aaa", 3)
+
+    //return option
+    mp.get("aaa")
+
+    //merge
+    mp + ("AceOfSeafood" -> 1480)
+    mp ++ Map("AceOfSeafood"->1480)
+
+    //return key or value
+    mp.keys
+    mp.values
+
+    //map
+    mp.map {
+      case (i, v) => (v, i)
+    }
+
+    mp.filter{case(i, v)=>i == "fallout4"}
+  }
 }
