@@ -16,5 +16,9 @@ object Main {
 //    val gameValues = Map("fallout4"->7800, "undertale"->980)
 //    print(Exam.mapTest(gameValues))
 
+    val rational = new Rational(1, 2)
+    val rational2 = new Rational(1, 3)
+
+    println(rational + rational2)
   }
 }
