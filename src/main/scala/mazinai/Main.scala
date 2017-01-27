@@ -22,7 +22,14 @@ object Main {
 
 //    println(Exam.yieldTest(List("a", "bb", "ccc")))
 
-    val multiTable = new MultiplicationTable()
-    print(multiTable.multiTable())
+//    val multiTable = new MultiplicationTable()
+//    print(multiTable.multiTable())
+
+    val cont = Array("aaa", "bbb")
+    val cont2 = Array("aaa", "bbb", "ccc")
+    val e1 = Element.elem(cont)
+    val e2 = Element.elem(cont2)
+
+    println(e1 above e2)
   }
 }
