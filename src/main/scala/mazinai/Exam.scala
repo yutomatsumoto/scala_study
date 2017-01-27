@@ -64,5 +64,9 @@ object Exam {
     mp.filter{case(i, v)=>i == "fallout4"}
   }
 
-
+  def yieldTest(lists: List[String]):List[Int] = {
+    for {
+      n <- lists
+    } yield n.length
+  }
 }
