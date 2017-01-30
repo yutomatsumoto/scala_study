@@ -1,4 +1,4 @@
-package mazinai
+package com.github.mazinai
 
 /**
   * Created by mazinai_tarazu on 1/26/17.
