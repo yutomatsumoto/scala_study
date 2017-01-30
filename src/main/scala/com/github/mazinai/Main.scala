@@ -1,4 +1,6 @@
-package mazinai
+package com.github.mazinai
+
+import com.github.mazinai2.{Exam => Test}
 
 object Main {
 
@@ -32,8 +34,11 @@ object Main {
     //
     //    println(e1 above e2)
 
-    val myQue = new MyQueue2
-    myQue.put(1)
-    println(myQue.get())
+    //    val myQue = new MyQueue2
+    //    myQue.put(1)
+    //    println(myQue.get())
+
+    val test = new Test
+    test.print
   }
 }

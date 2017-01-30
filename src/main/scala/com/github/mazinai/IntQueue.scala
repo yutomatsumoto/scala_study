@@ -1,4 +1,4 @@
-package mazinai
+package com.github.mazinai
 
 import scala.collection.mutable.ArrayBuffer
 
