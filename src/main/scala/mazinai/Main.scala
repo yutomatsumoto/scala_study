@@ -25,11 +25,20 @@ object Main {
 //    val multiTable = new MultiplicationTable()
 //    print(multiTable.multiTable())
 
-    val cont = Array("aaa", "bbb")
-    val cont2 = Array("aaa", "bbb", "ccc")
-    val e1 = Element.elem(cont)
-    val e2 = Element.elem(cont2)
+//    val cont = Array("aaa", "bbb")
+//    val cont2 = Array("aaa", "bbb", "ccc")
+//    val e1 = Element.elem(cont)
+//    val e2 = Element.elem(cont2)
 
-    println(e1 above e2)
+//    println(e1 above e2)
+
+    val text: Text = new Text("aaa")
+    val anchor: Anchor = new Anchor("bbb")
+    val style: Style = new Style("ccc")
+    val html: Html = CreateHTML.title(text, anchor, style)
+
+    println(html.value)
+
+    val aaa = new TypeParam[Int, String](1, "aaa")
   }
 }
