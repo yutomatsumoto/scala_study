@@ -38,9 +38,8 @@ object Main {
     //    myQue.put(1)
     //    println(myQue.get())
 
-    val test = new Test
-    test.print
-
+    //    val test = new Test
+    //    test.print
 
     //    val text: Text = new Text("aaa")
     //    val anchor: Anchor = new Anchor("bbb")
@@ -50,5 +49,8 @@ object Main {
     //    println(html.value)
     //
     //    val aaa = new TypeParam[Int, String](1, "aaa")
+
+    val lm = new ListManager
+    println(lm.append(List(1, 2, 3), List(4, 5, 6)))
   }
 }

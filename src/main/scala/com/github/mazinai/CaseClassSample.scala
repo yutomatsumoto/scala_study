@@ -51,6 +51,19 @@ class CaseClassSample {
     case BinOp("+", x, y) if x == y => BinOp("*", x, Number(2))
     case _ => e
   }
+
+  //ケースシーケンス。関数リテラルである
+  def withDefault: Option[Int] => Int = {
+    case Some(x) => x
+    case None => 0
+  }
+
+  //部分関数
+  //特定の引数に対しては結果を返すが、結果を返せない引数もあるような中途半端な関数
+  //この場合だとNilを渡したらダメ
+  def second: PartialFunction[List[Int], Int] = {
+    case x::y::_ => y
+  }
 }
 
 //sealedをつけるとこのファイル以外から拡張できなくなる。
