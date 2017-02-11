@@ -50,8 +50,35 @@ object Main {
     //
     //    val aaa = new TypeParam[Int, String](1, "aaa")
 
-    val lm = new ListManager
+    //    val lm = new ListManager
     //    println(lm.append(List(1, 2, 3), List(4, 5, 6)))
-    println(lm.product(List(1, 2, 3)))
+    //    println(lm.product(List(1, 2, 3)))
+    //    val lm = new ListManager
+    //    println(lm.append(List(1, 2, 3), List(4, 5, 6))ｊ)
+
+
+    //これじゃrequireが先に評価されるためエラー
+    //    val x = new RationalTrait {
+    //      override val denomArg: Int = 1
+    //      override val numerArg: Int = 2
+    //    }
+
+    //事前初期化
+    //    val x = new {
+    //      override val denomArg: Int = 1
+    //      override val numerArg: Int = 2
+    //    } with RationalTrait
+    //
+    //    println(x)
+
+    //lazy
+    LazyDemo
+
+    val x = new LazyRationalTrait {
+      override val denomArg: Int = 1
+      override val numerArg: Int = 2
+    }
+    println(x)
+
   }
 }
