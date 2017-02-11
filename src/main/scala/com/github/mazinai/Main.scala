@@ -51,6 +51,7 @@ object Main {
     //    val aaa = new TypeParam[Int, String](1, "aaa")
 
     val lm = new ListManager
-    println(lm.append(List(1, 2, 3), List(4, 5, 6)))
+    //    println(lm.append(List(1, 2, 3), List(4, 5, 6)))
+    println(lm.product(List(1, 2, 3)))
   }
 }
