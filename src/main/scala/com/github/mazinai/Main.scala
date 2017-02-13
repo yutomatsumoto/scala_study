@@ -72,13 +72,23 @@ object Main {
     //    println(x)
 
     //lazy
-    LazyDemo
+//    LazyDemo
+//
+//    val x = new LazyRationalTrait {
+//      override val denomArg: Int = 1
+//      override val numerArg: Int = 2
+//    }
+//    println(x)
 
-    val x = new LazyRationalTrait {
-      override val denomArg: Int = 1
-      override val numerArg: Int = 2
-    }
-    println(x)
+    //Extractors sample
+//    val x = "aaa@eee.com"
+//    val x = "aaa.com"
+//    x match {
+//      case EmailExtractors(user, domain) => println(user + domain)
+//      case _ => println("not email")
+//    }
 
+    val tom = "tom@eee.com"
+    println(DomainExtractors.isTomInDotCom(tom))
   }
 }
